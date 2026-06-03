@@ -1,0 +1,7 @@
+# 后端（端口 8000）
+cd RAG-ljy && python run_api.py
+
+# 前端（端口 5173，自动代理 API 到 8000）
+cd web && npm run dev
+
+各家证券对中芯国际的前景是否看好？为什么？
