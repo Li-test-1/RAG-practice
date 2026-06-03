@@ -1,11 +1,11 @@
-# RAG-ljy 企业知识库问答系统
+# RAG 企业知识库问答系统
 
 基于 LangChain + LanceDB 的 RAG 问答系统，支持混合检索（BM25 + 向量检索）、可选重排序、以及大模型回答，提供 CLI 和 Web 两种交互方式。
 
 ## 项目架构
 
 ```
-RAG-ljy/
+RAG/
 ├── config.py                  # 全局配置（dataclass）
 ├── main.py                    # CLI 命令行入口（click）
 ├── requirements.txt           # Python 依赖
@@ -103,7 +103,7 @@ JINA_API_KEY=your_jina_api_key
 MINERU_API_KEY=your_mineru_api_key
 ```
 
-> 使用默认配置（DashScope Embedding + DashScope Rerank + qwen-plus LLM）只需配置 `DASHSCOPE_API_KEY`。
+> 使用默认配置（DashScope Embedding + DashScope Rerank + qwen-plus LLM）只需配置 `DASHSCOPE_API_KEY`和`MINERU_API_KEY`。
 
 ## 使用方式
 
